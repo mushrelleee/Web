@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Eras Tour</title>
+   
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=IM+Fell+DW+Pica" />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/chomsky" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/school-cursive" type="text/css"/>
+    <link href="https://fonts.cdnfonts.com/css/carla" rel="stylesheet"> 
+    <link href="https://fonts.cdnfonts.com/css/satisfaction" rel="stylesheet">
+
+
+    <style>
+
+        * {
+          box-sizing: border-box;
+        }
+    
+        body {
+          background-color: #f9f9f9;
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+    
+        header {
+          background-color: #fff;
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+        }
+      header nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 20px 0;
+        padding: 0;
+      }
+
+
+      header nav ul li {
+        margin: 0 10px;
+      }
+
+      .TSlogo {
+        text-align: right;
+        width: 140px;
+        height:60px;
+      
+      }
+
+      .external-link-instagram {
+        height: 30px;
+        width: 30px;
+        text-align: left;
+      }
+
+      .external-link-spotify {
+        height: 27px;
+        width: 27x;
+        text-align: left;
+      }
+
+      .external-link-youtube {
+        height: 27px;
+        width: 40px;
+        text-align: left;
+      }
+
+      header nav ul li a {
+        color: #333;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color 0.3s ease;
+      }
+  
+      header nav ul li a:hover {
+        color: #c2185b;
+      }
+
+    
+      main {
+      margin: 40px auto;
+        max-width: 800px;
+      }
+  
+      h1 {
+        color: #c2185b;
+        font-family: "Playfair Display", serif;
+        font-size: 48px;
+        font-weight: 700;
+        margin: 0 0 30px;
+        margin-top: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    
+      }
+      
+      h2.subtitle {
+        color: #c2185b;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0 0 20px;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      section {
+        margin-bottom: 40px;
+      }
+    
+
+
+      p {
+        color: #666;
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 0 0 10px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+  
+      a {
+        color: #c2185b;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+  
+      a:hover {
+        color: #333;
+      }
+      
+   
+      .separator-line {
+        border-top: 1px solid #000000;
+        margin: 20px 0;
+        margin-bottom: 20px;
+      }
+
+      .tracklistmidnights {
+        color: #3b325e;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0 0 20px;
+        text-transform:capitalize;
+        font-style: normal;
+        font-family: Arial, Helvetica, sans-serif;
+        
+      }    
+     .tracklistevermore {
+        color:rgb(189, 91, 30);
+        font-size:28px;
+        font-weight: 200;
+        margin: 0 0 20px;
+        text-transform:lowercase;
+        font-style: italic;
+        font-family: "IM Fell DW Pica";
+      }
+
+      .tracklistfolklore {
+        color:rgb(81, 80, 79);
+        font-size:28px;
+        font-weight: 200;
+        margin: 0 0 20px;
+        text-transform: lowercase;
+        font-style: italic;
+        font-family: "IM Fell DW Pica";
+      }
+
+      .tracklistlover {
+        color:rgb(250, 156, 208);
+        font-size:24px;
+        font-weight: 130px;
+        margin: 0 0 20px;
+        text-transform: capitalize;
+        font-style: italic;
+        font-family:Georgia, 'Times New Roman', Times, serif
+      }
+
+      .tracklistreputation {
+        color:rgb(0, 0, 0);
+        font-size:24px;
+        font-weight: 100px;
+        margin: 0 0 20px;
+        text-transform: capitalize;
+        font-style: normal;
+        font-family: 'ChomskyRegular';
+      }
+
+      .tracklist1989 {
+        color:#aba0de;
+        font-size:24px;
+        font-weight: 100px;
+        margin: 0 0 20px;
+        text-transform: capitalize;
+        font-style: normal;
+        font-family: cursive;
+      }
+
+      .tracklistred {
+        color:#7e112b;
+        font-size:24px;
+        font-weight: 300px;
+        margin: 0 0 20px;
+        text-transform:uppercase;
+        font-style: normal;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+
+      .tracklistspeaknow {
+        color:#9f217b;
+        font-size:28px;
+        font-weight: 300px;
+        margin: 0 0 20px;
+        text-transform:capitalize;
+        font-style: normal;
+        font-family: 'SchoolCursiveRegular';
+      }
+
+      .tracklistfearless {
+        color:#583c2c;
+        font-size:40px;
+        font-weight: 300px;
+        margin: 0 0 20px;
+        text-transform:capitalize;
+        font-style: normal;
+        font-family: 'Carla', sans-serif;
+      }
+
+
+      h2 {
+        font-size: 20px;
+        font-weight: 5px;
+        color: #4b4b4e;
+        margin-top: 30px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+      }
+
+
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        margin-top: 50px;
+      }
+  
+      footer p {
+        margin: 0;
+      }
+    </style>
+
+      <body>
+        <header>
+          <div>
+          <nav>
+              <img src="https://static.wikia.nocookie.net/logopedia/images/d/d6/Taylor_Swift_2006.svg/revision/latest?cb=20220324160313" alt="TSlogo" class="TSlogo">
+            <ul>
+              <li><a href="Taylor Swift.html">Home</a></li>
+              <li><a href="Albums.html">Albums</a></li>
+              <li><a href="Eras Tour.html">Eras Tour</a></li>
+              <li><a href="Gallery.html">Gallery</a></li>
+              <li><a href="Songs.html">Songs</a></li>
+            </ul>
+            <a href="https://www.instagram.com/taylorswift/" target="_blank">
+              <img src="https://www.redcross.org/content/dam/redcross/brand-and-creative-marketing/shared-elements/nhq-social-icons/Instagram-1000x1000-G-Pl.png.transform/1288/q70/feature/image.png" alt="Instagram" class="external-link-instagram">
+            </a>
+            <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02?si=TP252pyFSAismsmxrE2Luw" target="_blank">
+              <img src="https://www.pngkit.com/png/full/811-8110601_spotify-logo-transparent-background-transparent-spotify-logo-black.png" alt="Spotify" class="external-link-spotify">
+            </a>
+            <a href="https://www.youtube.com/taylorswift" target="_blank">
+              <img src="https://th.bing.com/th/id/OIP.h3SUNW7EmgV0dCD3oJIUawHaEj?pid=ImgDet&rs=1" alt="Youtube" class="external-link-youtube">
+            </a>
+            
+          </nav>
+           
+          </div>
+            
+        </header>
+        
+        <main>
+            <h1>17 years, 12 albums</h1>
+            <h2 class="subtitle"> 57 singles </h2>
+            <p>Taylor Swift tells stories through her songs, shaping the lyrics into something beautiful that otherwise would've remained untold. Several myths revolve around her songs, such as the 5th song of each ablum being her most vulnerable one, or that each song is dedicated to someone, like her exes. In this section of the website, we'll be diving into the deeper meaning of her songs and breaking them down as well as analyzing her lyrics, but first, get to know us. </p>
+            <h2 class="subtitle">About us</h2>
+            <p>"Swifties" is the official name of her fandom. With over 150 million of us around the world, Swifties are passionate connoisseurs of Taylor's music. We make up a powerful fanbase and are desperate for her concert tickets!! Although we might share different opinions on what her best songs are, we most oftenly agree on which are the classics and most iconic. Being one myself, I've created this website in support of Taylor Swift. There is no excat distinction in what makes someone a Swiftie, you can join us without owning albums, and you're obviously more than welcomed if your obsession with her surpasses everything else! </p>
+       
+            <h2 class="subtitle">fan-favourites</h2>
+            <h2 class="tracklistmidnights">Midnights</h2>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3eX0NZfLtGzoLUxPNvRfqm?utm_source=generator" margin-bottom="5%" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> 
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0V3wPSX9ygBnCm8psDIegu?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          
+            <div class="separator-line"></div>
+           
+            <h2 class="tracklistevermore">evermore</h2>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1gcyHQpBQ1lfXGdhZmWrHP?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2gVhfX2Gy1T9kDuS9azrF7?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      
+            <div class="separator-line"></div>
+
+            <h2 class="tracklistlover">Lover</h2>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1BxfuPKGuaTgP7aM0Bbdwr?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4y5bvROuBDPr5fuwXbIBZR?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+            <div class="separator-line"></div>
+
+            <h2 class="tracklistfolklore">folklore</h2>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0ZNU020wNYvgW84iljPkPP?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3hUxzQpSfdDqwM3ZTFQY0K?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+            <div class="separator-line"></div>
+
+            <h2 class="tracklistreputation">Reputation</h2>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1R0a2iXumgCiFb7HEZ7gUE?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0VE4kBnHJUgtMf0dy6DRmW?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+            <div class="separator-line"></div>
+
+            <h2 class="tracklist1989">1989</h2>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4lIxdJw6W3Fg4vUIYCB0S5?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/59HjlYCeBsxdI0fcm3zglw?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+             
+            <div class="separator-line"></div>
+
+            <h2 class="tracklistred">Red</h2>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5enxwA8aAbwZbf5qCHORXi?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/05GsNucq8Bngd9fnd4fRa0?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+            <div class="separator-line"></div>
+
+            <h2 class="tracklistspeaknow">Speak Now</h2>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/10eBRyImhfqVvkiVEGf0N0?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3RBluWmSoG2pGA1OePzGJI?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+            <div class="separator-line"></div>
+
+            <h2 class="tracklistfearless">Fearless</h2>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1qrpoAMXodY6895hGKoUpA?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/22bPsP2jCgbLUvh82U0Z3M?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            
+            <div class="separator-line"></div>
+
+            <h2 class="subtitle">pop genre icons</h2 class=subtitle>
+            <p>Some of Taylor's best charting singles, modern day classics, songs everyone knows the lyrics to, our anthem. </p>
+
+            <h2>Reputation: We live for the shade Taylor throws at the social media!</h2>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1P17dC1amhFzptugyAO7Il?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+           
+           <h2>1989: Named after her birth year, it stays the most iconic album by Taylor Swift up till this day.</h2>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/33Kq0AT5rvwyE4azisG08x?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2sC2P3BN0IXujNaaSyDmtP?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3fthfkkvy9av3q3uAGVf7U?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0yN4fNzmVnmgC0dsOoi9Wh?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+            <h2>Red: Every age is Taylor's prime time, except at 22, she surpassed herself</h2>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5YqltLsjdqFtvqE7Nrysvs?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4OAuvHryIVv4kMDNSLuPt6?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+            <h2>Fearless: Taylor Swift's golden era, where every drop was a masterpiece</h2>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6YvqWjhGD8mB5QXcbcUKtx?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5YL553x8sHderRBDlm3NM3?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+            
+        
+        
+
+      
+      
+        </main>
+
+    
+        </body>
+
+        <footer>
+            <p>&copy; 2023 An Introduction to Taylor Swift</p>
+          </footer>
+      </html>
