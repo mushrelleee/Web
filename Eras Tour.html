@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <title>Eras Tour</title>
-    
+
 
 
     <style>
+      * {
+        box-sizing: border-box;
+      }
 
-        * {
-          box-sizing: border-box;
-        }
-    
-        body {
-          background-color: #f9f9f9;
-          font-family: Arial, sans-serif;
-          margin: 0;
-          padding: 0;
-        }
-    
-        header {
-          background-color: #fff;
-          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-          padding: 20px;
-        }
+      body {
+        background-color: #f9f9f9;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #fff;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+
       header nav ul {
         display: flex;
         justify-content: center;
@@ -40,8 +41,8 @@
       .TSlogo {
         text-align: right;
         width: 140px;
-        height:60px;
-      
+        height: 60px;
+
       }
 
       .external-link-instagram {
@@ -70,17 +71,17 @@
         text-transform: uppercase;
         transition: color 0.3s ease;
       }
-  
+
       header nav ul li a:hover {
         color: #c2185b;
       }
 
-    
+
       main {
-      margin: 40px auto;
+        margin: 40px auto;
         max-width: 800px;
       }
-  
+
       h1 {
         color: #c2185b;
         font-family: "Playfair Display", serif;
@@ -90,9 +91,9 @@
         margin-top: 20px;
         text-align: center;
         text-transform: uppercase;
-    
+
       }
-      
+
       h2.subtitle {
         color: #c2185b;
         font-size: 24px;
@@ -107,7 +108,7 @@
       section {
         margin-bottom: 40px;
       }
-    
+
 
 
       p {
@@ -118,214 +119,236 @@
         margin-bottom: 20px;
         text-align: center;
       }
-  
+
       a {
         color: #c2185b;
         text-decoration: none;
         transition: color 0.3s ease;
       }
-  
+
       a:hover {
         color: #333;
       }
-      
+
       .erastour {
-    width: 900px;
-    height: 900px;
-          text-align: center;
-   
+        width: 900px;
+        height: 900px;
+        text-align: center;
+
       }
 
       .ticket-box {
-  border: #2E2E2E;
-  border-radius: 2px;
-  padding: 20px;
-  background-color: #F7ECEB;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px;
-  margin-top: 30px;
-  text-align: center;
-}
+        border: #2E2E2E;
+        border-radius: 2px;
+        padding: 20px;
+        background-color: #F7ECEB;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        margin-bottom: 30px;
+        margin-top: 30px;
+        text-align: center;
+      }
 
 
-.ticket-box-description {
-  color:   #782933;
-  font-size: 18px;
-  margin-bottom: 20px;
-}
+      .ticket-box-description {
+        color: #782933;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
 
-.ticket-box-button {
-  background-color:  #782933;
-  border: none;
-  border-radius: 30px;
-  color: #FFFFFF;
-  font-size: 20px;
-  padding: 10px 25px;
-  transition: background-color 0.3s ease;
-}
+      .ticket-box-button {
+        background-color: #782933;
+        border: none;
+        border-radius: 30px;
+        color: #FFFFFF;
+        font-size: 20px;
+        padding: 10px 25px;
+        transition: background-color 0.3s ease;
+      }
 
-.ticket-box-button:hover {
-  background-color: #935d72;
-}
-
-
-.submit {
-  background-color: #FFFFFF;
-  border: none;
-  color: #782933;
-  padding: 12px 25px;
-  border-radius: 10px;
-  margin-top: 8px;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  cursor: pointer;
-  text-align:center;
-}
-
-.userinfobox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
-  width: 80%;
-  margin: 0 auto;
-  background-color: #782933;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.input-section {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-}
-
-label {
-  font-weight: bold;
-  margin-bottom: 5px;
-  color:#fff
-}
-
-input {
-  padding: 10px;
-  border: 1px solid #2e2e2e;
-  border-radius: 5px;
-  background-color: #fff;
-  font-size: 16px;
-  color: #555;
-}
-
-input:focus {
-  outline: none;
-  border-color: #7b68f4;
-  box-shadow: 0 0 5px rgba(95, 74, 177, 0.5);
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
+      .ticket-box-button:hover {
+        background-color: #935d72;
+      }
 
 
+      .submit {
+        background-color: #FFFFFF;
+        border: none;
+        color: #782933;
+        padding: 12px 25px;
+        border-radius: 10px;
+        margin-top: 8px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+        text-align: center;
+      }
 
-     footer {
+      .userinfobox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        width: 80%;
+        margin: 0 auto;
+        background-color: #782933;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .input-section {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+      }
+
+      label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #fff
+      }
+
+      input {
+        padding: 10px;
+        border: 1px solid #2e2e2e;
+        border-radius: 5px;
+        background-color: #fff;
+        font-size: 16px;
+        color: #555;
+      }
+
+      input:focus {
+        outline: none;
+        border-color: #7b68f4;
+        box-shadow: 0 0 5px rgba(95, 74, 177, 0.5);
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+
+
+      footer {
         background-color: #333;
         color: #fff;
         padding: 20px;
         text-align: center;
         margin-top: 50px;
       }
-  
+
       footer p {
         margin: 0;
       }
-
-
-
-
     </style>
-</head>
-<body>
-  <header>
-    <div>
-    <nav>
-        <img src="https://static.wikia.nocookie.net/logopedia/images/d/d6/Taylor_Swift_2006.svg/revision/latest?cb=20220324160313" alt="TSlogo" class="TSlogo">
-      <ul>
-        <li><a href="Taylor Swift.html">Home</a></li>
-        <li><a href="Albums.html">Albums</a></li>
-        <li><a href="Eras Tour.html">Eras Tour</a></li>
-        <li><a href="Gallery.html">Gallery</a></li>
-        <li><a href="Songs.html">Songs</a></li>
-      </ul>
-      <a href="https://www.instagram.com/taylorswift/" target="_blank">
-        <img src="https://www.redcross.org/content/dam/redcross/brand-and-creative-marketing/shared-elements/nhq-social-icons/Instagram-1000x1000-G-Pl.png.transform/1288/q70/feature/image.png" alt="Instagram" class="external-link-instagram">
-      </a>
-      <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02?si=TP252pyFSAismsmxrE2Luw" target="_blank">
-        <img src="https://www.pngkit.com/png/full/811-8110601_spotify-logo-transparent-background-transparent-spotify-logo-black.png" alt="Spotify" class="external-link-spotify">
-      </a>
-      <a href="https://www.youtube.com/taylorswift" target="_blank">
-        <img src="https://th.bing.com/th/id/OIP.h3SUNW7EmgV0dCD3oJIUawHaEj?pid=ImgDet&rs=1" alt="Youtube" class="external-link-youtube">
-      </a>
-      
-    </nav>
-     
-    </div>
-      
-  </header>
-  <main>
-    <h1>The Eras Tour</h1>
-    <h2 class="subtitle"> what is it?</h2>
-    <p>Having not toured for her studio albums Lover (2019), Folklore (2020), and Evermore (2020) due to the COVID-19 pandemic, Taylor Swift is embarking on the Eras Tour in support of all of her albums, including her latest, Midnights (2022). Described by Swift as a "journey through all of my musical eras", the Eras Tour show lasts for over three hours, consisting of performances of 44 songs divided into 10 acts that portray Swift's studio albums conceptually. The tour received unanimous critical acclaim, with emphasis on the concept, production, and Swift's musicianship, vocals, charisma, stamina, and versatility as an entertainer. This is Taylor's biggest concert yet, selling more than 2.4 million in a single day, but also her longest show ever. It's easy to compare one of Swift's stadium shows to something you'd see on Broadway—never has that been more true than for The Eras Tour. The setlist is cut up into acts, grouped by eras for each of Swift's ten studio albums.</p>
-    <section>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <nav>
+
+          <ul>
+            <img
+              src="https://static.wikia.nocookie.net/logopedia/images/d/d6/Taylor_Swift_2006.svg/revision/latest?cb=20220324160313"
+              alt="TSlogo" class="TSlogo">
+            <li><a href="Taylor Swift.html">Home</a></li>
+            <li><a href="Albums.html">Albums</a></li>
+            <li><a href="Eras Tour.html">Eras Tour</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Songs.html">Songs</a></li>
+            <a href="https://www.instagram.com/taylorswift/" target="_blank">
+              <img
+                src="https://www.redcross.org/content/dam/redcross/brand-and-creative-marketing/shared-elements/nhq-social-icons/Instagram-1000x1000-G-Pl.png.transform/1288/q70/feature/image.png"
+                alt="Instagram" class="external-link-instagram">
+            </a>
+            <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02?si=TP252pyFSAismsmxrE2Luw" target="_blank">
+              <img
+                src="https://www.pngkit.com/png/full/811-8110601_spotify-logo-transparent-background-transparent-spotify-logo-black.png"
+                alt="Spotify" class="external-link-spotify">
+            </a>
+            <a href="https://www.youtube.com/taylorswift" target="_blank">
+              <img src="https://th.bing.com/th/id/OIP.h3SUNW7EmgV0dCD3oJIUawHaEj?pid=ImgDet&rs=1" alt="Youtube"
+                class="external-link-youtube">
+            </a>
+          </ul>
+
+
+        </nav>
+
+      </div>
+
+    </header>
+    <main>
+      <h1>The Eras Tour</h1>
+      <h2 class="subtitle"> what is it?</h2>
+      <p>Having not toured for her studio albums Lover (2019), Folklore (2020), and Evermore (2020) due to the COVID-19
+        pandemic, Taylor Swift is embarking on the Eras Tour in support of all of her albums, including her latest,
+        Midnights (2022). Described by Swift as a "journey through all of my musical eras", the Eras Tour show lasts for
+        over three hours, consisting of performances of 44 songs divided into 10 acts that portray Swift's studio albums
+        conceptually. The tour received unanimous critical acclaim, with emphasis on the concept, production, and
+        Swift's musicianship, vocals, charisma, stamina, and versatility as an entertainer. This is Taylor's biggest
+        concert yet, selling more than 2.4 million in a single day, but also her longest show ever. It's easy to compare
+        one of Swift's stadium shows to something you'd see on Broadway—never has that been more true than for The Eras
+        Tour. The setlist is cut up into acts, grouped by eras for each of Swift's ten studio albums.</p>
+      <section>
         <h2 class="subtitle">Dates & Locations</h2>
-    </section>
-    <img src="https://www.levisstadium.com/wp-content/uploads/2022/11/TAYLOR-SWIFT-THE-ERAS-TOUR.png" alt="erastour" class="erastour">
+      </section>
+      <img src="https://www.levisstadium.com/wp-content/uploads/2022/11/TAYLOR-SWIFT-THE-ERAS-TOUR.png" alt="erastour"
+        class="erastour">
 
-<section>
-<h2 class="subtitle">Track list</h2>
-<p>Missed the presales program and couldn't get a ticket for your show? No worries! Listen along to the tracklist and take part in the tour virtually, at the comfort of your home. </p>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6qSYIKJihVKpWr2HDeHjxS?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
- 
-<h2 class="subtitle">Ticketing & prices</h>
-<div class="ticket-box">
-    <p class="ticket-box-description">Purchase your tickets now and enjoy 15% off!</p>
-    <a href="https://www.stubhub.ca/performer/136034?AffiliateID=49&PCID=PSCABINCONTAYLO8E3D98B5BB&AdID=81226538513241&gclid=815f9a0aec3d1a261a0efe3969e6c884%2c815f9a0aec3d1a261a0efe3969e6c884&ps_p=1%2c1&ps_ag=1299623183086132%2c1299623183086132&ps_tg=kwd-81226689700047%3aloc-32%2ckwd-81226689700047%3aloc-32&ps=&ps=&ps_c=470142436&ps_ad=81226538513241&ps_n=o&ps_d=c&gcid=C12289X021&keyword=1299623183086132kwd-81226689700047%3aloc-32_c&creative=&utm_kxconfid=s2rshsbmv&utm_campaign=470142436&kwt=nb&mt=e&kw=Taylor+Swift&ap=&ploc=123990&iloc=&utm_source=bing&utm_medium=paid-search&utm_sub_medium=prospecting&utm_term=nb&utm_content=default&gclsrc=3p.ds&msclkid=815f9a0aec3d1a261a0efe3969e6c884"><button class="ticket-box-button">Buy tickets</button></a>
-  </div>
-</section>
+      <section>
+        <h2 class="subtitle">Track list</h2>
+        <p>Missed the presales program and couldn't get a ticket for your show? No worries! Listen along to the
+          tracklist and take part in the tour virtually, at the comfort of your home. </p>
+        <iframe style="border-radius:12px"
+          src="https://open.spotify.com/embed/playlist/6qSYIKJihVKpWr2HDeHjxS?utm_source=generator" width="100%"
+          height="352" frameBorder="0" allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-<h2 class="subtitle">Newsletter</h2>
-<p>Sign up to our newsletter to receive updates about ticket discounts and price drops in albums!</p>
+        <h2 class="subtitle">Ticketing & prices</h>
+          <div class="ticket-box">
+            <p class="ticket-box-description">Purchase your tickets now and enjoy 15% off!</p>
+            <a
+              href="https://www.stubhub.ca/performer/136034?AffiliateID=49&PCID=PSCABINCONTAYLO8E3D98B5BB&AdID=81226538513241&gclid=815f9a0aec3d1a261a0efe3969e6c884%2c815f9a0aec3d1a261a0efe3969e6c884&ps_p=1%2c1&ps_ag=1299623183086132%2c1299623183086132&ps_tg=kwd-81226689700047%3aloc-32%2ckwd-81226689700047%3aloc-32&ps=&ps=&ps_c=470142436&ps_ad=81226538513241&ps_n=o&ps_d=c&gcid=C12289X021&keyword=1299623183086132kwd-81226689700047%3aloc-32_c&creative=&utm_kxconfid=s2rshsbmv&utm_campaign=470142436&kwt=nb&mt=e&kw=Taylor+Swift&ap=&ploc=123990&iloc=&utm_source=bing&utm_medium=paid-search&utm_sub_medium=prospecting&utm_term=nb&utm_content=default&gclsrc=3p.ds&msclkid=815f9a0aec3d1a261a0efe3969e6c884"><button
+                class="ticket-box-button">Buy tickets</button></a>
+          </div>
+      </section>
 
-<div class="userinfobox">
-    <div class="container">
-      <div class="input-section">
-        <label>First Name:</label>
-        <input type="text" id="first-name" name="first-name">
-      </div>
-      <div class="input-section">
-        <label>Last Name:</label>
-        <input type="text" id="last-name" name="last-name">
-      </div>
-      <div class="input-section">
-        <label>Email:</label>
-        <input type="email" id="email" name="email">
-      </div>
-      <div class="input-section">
-        <label>Phone Number:</label>
-        <input type="tel" id="phone" name="phone">
-      </div>
-      <button class="submit" type="submit">Submit</button>
-    </div>
-  </div>
-  
+      <h2 class="subtitle">Newsletter</h2>
+      <p>Sign up to our newsletter to receive updates about ticket discounts and price drops in albums!</p>
 
-</main>
-  <footer>
-    <p>&copy; 2023 An Introduction to Taylor Swift</p>
-  </footer>
-</body>
+      <div class="userinfobox">
+        <div class="container">
+          <div class="input-section">
+            <label>First Name:</label>
+            <input type="text" id="first-name" name="first-name">
+          </div>
+          <div class="input-section">
+            <label>Last Name:</label>
+            <input type="text" id="last-name" name="last-name">
+          </div>
+          <div class="input-section">
+            <label>Email:</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div class="input-section">
+            <label>Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <button class="submit" type="submit">Submit</button>
+        </div>
+      </div>
+
+
+    </main>
+    <footer>
+      <p>&copy; 2023 An Introduction to Taylor Swift</p>
+    </footer>
+  </body>
+
 </html>
